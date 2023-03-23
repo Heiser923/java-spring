@@ -13,6 +13,9 @@ import java.util.Set;
 @Data
 public class TransactionType extends Base {
 
+    private String name;
+
     @OneToMany (mappedBy = "transactionType")
     private Set<Transaction> transactions = new HashSet<>();
+
 }
